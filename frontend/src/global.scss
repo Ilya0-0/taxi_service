@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kurale&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans+Narrow:wght@400;700&family=Unbounded:wght@200..900&display=swap");
+
+$green: #25d162;
+$darkGreen: #1dc258;
+$dark: #1d1d1d;
+$lightDark: #2b2b2b;
+$darkGray: #3e3e3e;
+$white: #ffffff;
+$gray: #e8e8e8;
+$red: #d12525;
+
+body {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 24px;
+  color: $darkGray;
+}
+
+h1 {
+  font-size: 68px;
+}
+h2 {
+  font-size: 48px;
+}
+
+.primaryBtn {
+  width: 100%;
+  font-size: 24px;
+  padding: 10px;
+  border: 2px solid $green;
+  color: $green;
+  border-radius: 50%;
+
+  &:hover {
+    background: $green;
+    color: $white;
+  }
+  &:active {
+    background: $darkGreen;
+  }
+}
+
+.secondBtn {
+  width: 100%;
+  font-size: 24px;
+  padding: 10px;
+  background: $white;
+  color: $lightDark;
+  border-radius: 50%;
+
+  &:hover {
+    background: $gray;
+  }
+  &:active {
+    background: $gray;
+  }
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  input {
+    width: 100%;
+    background: $lightDark;
+    font-size: 24px;
+    padding: 8px 16px;
+    border-radius: 16px;
+    color: $white;
+
+    &:focus ~ label {
+      top: 0;
+      font-size: 16px;
+    }
+  }
+
+  label {
+    position: absolute;
+    top: 8px;
+    font-size: 24px;
+    left: 16px;
+    color: $white;
+  }
+
+  span {
+    font-size: 16px;
+    color: $red;
+    margin-left: 8px;
+  }
+}
